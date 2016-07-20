@@ -1,0 +1,6 @@
+framework module Pods_SDWebImageTutorialUITests {
+  umbrella header "Pods-SDWebImageTutorialUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

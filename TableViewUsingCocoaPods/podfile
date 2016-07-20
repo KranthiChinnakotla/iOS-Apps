@@ -1,0 +1,21 @@
+
+# Uncomment this line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'SDWebImageTutorial' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SDWebImageTutorial
+  pod 'SDWebImage', '~>3.7'
+
+  target 'SDWebImageTutorialTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SDWebImageTutorialUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
