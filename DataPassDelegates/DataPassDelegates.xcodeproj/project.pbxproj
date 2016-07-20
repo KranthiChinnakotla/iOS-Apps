@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767093651D342B3100257918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767093641D342B3100257918 /* AppDelegate.swift */; };
+		767093671D342B3100257918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767093661D342B3100257918 /* ViewController.swift */; };
+		7670936A1D342B3200257918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767093681D342B3200257918 /* Main.storyboard */; };
+		7670936D1D342B3200257918 /* DataPassDelegates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7670936B1D342B3200257918 /* DataPassDelegates.xcdatamodeld */; };
+		7670936F1D342B3200257918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7670936E1D342B3200257918 /* Assets.xcassets */; };
+		767093721D342B3200257918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767093701D342B3200257918 /* LaunchScreen.storyboard */; };
+		7670937D1D342B3200257918 /* DataPassDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670937C1D342B3200257918 /* DataPassDelegatesTests.swift */; };
+		767093881D342B3200257918 /* DataPassDelegatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767093871D342B3200257918 /* DataPassDelegatesUITests.swift */; };
+		767093961D342CF900257918 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767093951D342CF900257918 /* firstViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767093791D342B3200257918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767093591D342B3100257918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767093601D342B3100257918;
+			remoteInfo = DataPassDelegates;
+		};
+		767093841D342B3200257918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767093591D342B3100257918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767093601D342B3100257918;
+			remoteInfo = DataPassDelegates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		767093611D342B3100257918 /* DataPassDelegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPassDelegates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767093641D342B3100257918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		767093661D342B3100257918 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		767093691D342B3200257918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7670936C1D342B3200257918 /* DataPassDelegates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataPassDelegates.xcdatamodel; sourceTree = "<group>"; };
+		7670936E1D342B3200257918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767093711D342B3200257918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		767093731D342B3200257918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767093781D342B3200257918 /* DataPassDelegatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPassDelegatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7670937C1D342B3200257918 /* DataPassDelegatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassDelegatesTests.swift; sourceTree = "<group>"; };
+		7670937E1D342B3200257918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767093831D342B3200257918 /* DataPassDelegatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPassDelegatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767093871D342B3200257918 /* DataPassDelegatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassDelegatesUITests.swift; sourceTree = "<group>"; };
+		767093891D342B3200257918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767093951D342CF900257918 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7670935E1D342B3100257918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767093751D342B3200257918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767093801D342B3200257918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767093581D342B3100257918 = {
+			isa = PBXGroup;
+			children = (
+				767093631D342B3100257918 /* DataPassDelegates */,
+				7670937B1D342B3200257918 /* DataPassDelegatesTests */,
+				767093861D342B3200257918 /* DataPassDelegatesUITests */,
+				767093621D342B3100257918 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		767093621D342B3100257918 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767093611D342B3100257918 /* DataPassDelegates.app */,
+				767093781D342B3200257918 /* DataPassDelegatesTests.xctest */,
+				767093831D342B3200257918 /* DataPassDelegatesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		767093631D342B3100257918 /* DataPassDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				767093641D342B3100257918 /* AppDelegate.swift */,
+				767093661D342B3100257918 /* ViewController.swift */,
+				767093681D342B3200257918 /* Main.storyboard */,
+				767093951D342CF900257918 /* firstViewController.swift */,
+				7670936E1D342B3200257918 /* Assets.xcassets */,
+				767093701D342B3200257918 /* LaunchScreen.storyboard */,
+				767093731D342B3200257918 /* Info.plist */,
+				7670936B1D342B3200257918 /* DataPassDelegates.xcdatamodeld */,
+			);
+			path = DataPassDelegates;
+			sourceTree = "<group>";
+		};
+		7670937B1D342B3200257918 /* DataPassDelegatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7670937C1D342B3200257918 /* DataPassDelegatesTests.swift */,
+				7670937E1D342B3200257918 /* Info.plist */,
+			);
+			path = DataPassDelegatesTests;
+			sourceTree = "<group>";
+		};
+		767093861D342B3200257918 /* DataPassDelegatesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				767093871D342B3200257918 /* DataPassDelegatesUITests.swift */,
+				767093891D342B3200257918 /* Info.plist */,
+			);
+			path = DataPassDelegatesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767093601D342B3100257918 /* DataPassDelegates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7670938C1D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegates" */;
+			buildPhases = (
+				7670935D1D342B3100257918 /* Sources */,
+				7670935E1D342B3100257918 /* Frameworks */,
+				7670935F1D342B3100257918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataPassDelegates;
+			productName = DataPassDelegates;
+			productReference = 767093611D342B3100257918 /* DataPassDelegates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		767093771D342B3200257918 /* DataPassDelegatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7670938F1D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegatesTests" */;
+			buildPhases = (
+				767093741D342B3200257918 /* Sources */,
+				767093751D342B3200257918 /* Frameworks */,
+				767093761D342B3200257918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7670937A1D342B3200257918 /* PBXTargetDependency */,
+			);
+			name = DataPassDelegatesTests;
+			productName = DataPassDelegatesTests;
+			productReference = 767093781D342B3200257918 /* DataPassDelegatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		767093821D342B3200257918 /* DataPassDelegatesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767093921D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegatesUITests" */;
+			buildPhases = (
+				7670937F1D342B3200257918 /* Sources */,
+				767093801D342B3200257918 /* Frameworks */,
+				767093811D342B3200257918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767093851D342B3200257918 /* PBXTargetDependency */,
+			);
+			name = DataPassDelegatesUITests;
+			productName = DataPassDelegatesUITests;
+			productReference = 767093831D342B3200257918 /* DataPassDelegatesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		767093591D342B3100257918 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = edu.uncc.cs6010;
+				TargetAttributes = {
+					767093601D342B3100257918 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					767093771D342B3200257918 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 767093601D342B3100257918;
+					};
+					767093821D342B3200257918 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 767093601D342B3100257918;
+					};
+				};
+			};
+			buildConfigurationList = 7670935C1D342B3100257918 /* Build configuration list for PBXProject "DataPassDelegates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 767093581D342B3100257918;
+			productRefGroup = 767093621D342B3100257918 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				767093601D342B3100257918 /* DataPassDelegates */,
+				767093771D342B3200257918 /* DataPassDelegatesTests */,
+				767093821D342B3200257918 /* DataPassDelegatesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7670935F1D342B3100257918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767093721D342B3200257918 /* LaunchScreen.storyboard in Resources */,
+				7670936F1D342B3200257918 /* Assets.xcassets in Resources */,
+				7670936A1D342B3200257918 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767093761D342B3200257918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767093811D342B3200257918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7670935D1D342B3100257918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767093671D342B3100257918 /* ViewController.swift in Sources */,
+				7670936D1D342B3200257918 /* DataPassDelegates.xcdatamodeld in Sources */,
+				767093651D342B3100257918 /* AppDelegate.swift in Sources */,
+				767093961D342CF900257918 /* firstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767093741D342B3200257918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7670937D1D342B3200257918 /* DataPassDelegatesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7670937F1D342B3200257918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767093881D342B3200257918 /* DataPassDelegatesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7670937A1D342B3200257918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767093601D342B3100257918 /* DataPassDelegates */;
+			targetProxy = 767093791D342B3200257918 /* PBXContainerItemProxy */;
+		};
+		767093851D342B3200257918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767093601D342B3100257918 /* DataPassDelegates */;
+			targetProxy = 767093841D342B3200257918 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		767093681D342B3200257918 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767093691D342B3200257918 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		767093701D342B3200257918 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767093711D342B3200257918 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7670938A1D342B3200257918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7670938B1D342B3200257918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7670938D1D342B3200257918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DataPassDelegates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7670938E1D342B3200257918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DataPassDelegates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		767093901D342B3200257918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataPassDelegatesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataPassDelegates.app/DataPassDelegates";
+			};
+			name = Debug;
+		};
+		767093911D342B3200257918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataPassDelegatesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataPassDelegates.app/DataPassDelegates";
+			};
+			name = Release;
+		};
+		767093931D342B3200257918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DataPassDelegatesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegatesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DataPassDelegates;
+			};
+			name = Debug;
+		};
+		767093941D342B3200257918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DataPassDelegatesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.DataPassDelegatesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DataPassDelegates;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7670935C1D342B3100257918 /* Build configuration list for PBXProject "DataPassDelegates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7670938A1D342B3200257918 /* Debug */,
+				7670938B1D342B3200257918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7670938C1D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7670938D1D342B3200257918 /* Debug */,
+				7670938E1D342B3200257918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7670938F1D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767093901D342B3200257918 /* Debug */,
+				767093911D342B3200257918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		767093921D342B3200257918 /* Build configuration list for PBXNativeTarget "DataPassDelegatesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767093931D342B3200257918 /* Debug */,
+				767093941D342B3200257918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7670936B1D342B3200257918 /* DataPassDelegates.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7670936C1D342B3200257918 /* DataPassDelegates.xcdatamodel */,
+			);
+			currentVersion = 7670936C1D342B3200257918 /* DataPassDelegates.xcdatamodel */;
+			path = DataPassDelegates.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 767093591D342B3100257918 /* Project object */;
+}
