@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FirstTableViewController.app.didset:FirstTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FirstTableViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:FirstTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ApplicationJson.(parseJson(String, completion : (app : [Application]) -&gt; ()) -&gt; ()).(closure #1).(closure #1):ApplicationJson.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ApplicationJson.(parseJson(String, completion : (app : [Application]) -&gt; ()) -&gt; ()).(closure #1):ApplicationJson.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FirstTableViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:FirstTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell!">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
