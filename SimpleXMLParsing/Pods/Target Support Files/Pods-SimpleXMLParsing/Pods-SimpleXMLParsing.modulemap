@@ -1,0 +1,6 @@
+framework module Pods_SimpleXMLParsing {
+  umbrella header "Pods-SimpleXMLParsing-umbrella.h"
+
+  export *
+  module * { export * }
+}
