@@ -7,13 +7,29 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class FinalViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    var email:String?
+    var name:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if(email != nil){
+            emailLabel.text = email
+        }
+        if(name != nil){
+            nameLabel.text = name
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

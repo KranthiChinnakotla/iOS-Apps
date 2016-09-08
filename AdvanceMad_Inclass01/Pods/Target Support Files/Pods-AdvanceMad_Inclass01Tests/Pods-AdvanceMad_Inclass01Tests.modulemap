@@ -1,0 +1,6 @@
+framework module Pods_AdvanceMad_Inclass01Tests {
+  umbrella header "Pods-AdvanceMad_Inclass01Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
