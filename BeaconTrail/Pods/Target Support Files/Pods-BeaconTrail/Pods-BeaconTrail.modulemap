@@ -1,0 +1,6 @@
+framework module Pods_BeaconTrail {
+  umbrella header "Pods-BeaconTrail-umbrella.h"
+
+  export *
+  module * { export * }
+}

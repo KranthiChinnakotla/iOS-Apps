@@ -8,15 +8,51 @@
 
 import UIKit
 import CoreData
+import Firebase
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate,CLLocationManagerDelegate  {
 
     var window: UIWindow?
 
+    let beaconManager = ESTBeaconManager()
+    func beaconManager(manager: AnyObject, didEnterRegion region: CLBeaconRegion) {
+        let notification = UILocalNotification()
+        if (region.major == 45153 ){
+            notification.alertBody =
+            "Produce!"
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+
+        }else if(region.major == 48071){
+            
+            notification.alertBody =
+            "lifestyle!"
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+            
+        }else if(region.major == 15212){
+            notification.alertBody =
+            "grocery!"
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+        }
+        
+    
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.beaconManager.delegate = self
+        self.beaconManager.requestAlwaysAuthorization()
+        self.beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,major: 45153, minor: 9209,identifier: "monitored region"))
+        //self.beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            //proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,major: 48071, minor: 25324,identifier: "monitored region"))
+        //self.beaconManager.startMonitoringForRegion(CLBeaconRegion(
+          //  proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,major: 15212, minor: 31506,identifier: "monitored region"))
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert, categories: nil))
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self
+        FIRApp.configure()
         return true
     }
 
