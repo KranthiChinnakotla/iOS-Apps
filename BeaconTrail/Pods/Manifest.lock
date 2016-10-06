@@ -58,7 +58,6 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
-  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - EstimoteSDK
@@ -70,7 +69,6 @@ DEPENDENCIES:
   - Firebase/Storage
   - MBProgressHUD (~> 1.0.0)
   - SDWebImage (~> 3.8)
-  - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
   EstimoteSDK: b7bae318490d7652f3b17d3b04d317cb64dc447e
@@ -89,8 +87,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 21dcd44331c0f9c89fe29b0529584f0b87727f43
+PODFILE CHECKSUM: bd2fa45ff7122de043e44e4f3ba8d70807cbedda
 
 COCOAPODS: 1.0.1

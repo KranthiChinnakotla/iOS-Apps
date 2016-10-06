@@ -18,6 +18,8 @@
 		76599F6D1D81B03800E6604C /* BeaconTrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76599F6C1D81B03800E6604C /* BeaconTrailUITests.swift */; };
 		76599F7C1D8234F700E6604C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76599F7B1D8234F700E6604C /* GoogleService-Info.plist */; };
 		76599F7E1D82566C00E6604C /* discounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76599F7D1D82566C00E6604C /* discounts.swift */; };
+		767166AF1D8D81AE00EA81A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767166A21D8D802D00EA81A2 /* Alamofire.framework */; };
+		767166B01D8D81AE00EA81A2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 767166A21D8D802D00EA81A2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE53A6F17E1BCDD49E00A6E5 /* Pods_BeaconTrailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2436AD83C368E4EDA464E6 /* Pods_BeaconTrailUITests.framework */; };
 		F6E51EF7B96901C5B10C86BF /* Pods_BeaconTrail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1330810E2F4B70D046A0DD96 /* Pods_BeaconTrail.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +39,77 @@
 			remoteGlobalIDString = 76599F451D81B03700E6604C;
 			remoteInfo = BeaconTrail;
 		};
+		767166A11D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		767166A31D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		767166A51D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		767166A71D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		767166A91D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		767166AB1D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		767166AD1D8D802D00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		767166B11D8D81AE00EA81A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		767166B31D8D81AE00EA81A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				767166B01D8D81AE00EA81A2 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A6173618383D435605D332D /* Pods_BeaconTrailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconTrailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +129,10 @@
 		76599F681D81B03800E6604C /* BeaconTrailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconTrailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76599F6C1D81B03800E6604C /* BeaconTrailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTrailUITests.swift; sourceTree = "<group>"; };
 		76599F6E1D81B03800E6604C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76599F7A1D81B21500E6604C /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		76599F7B1D8234F700E6604C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76599F7D1D82566C00E6604C /* discounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = discounts.swift; sourceTree = "<group>"; };
+		767166951D8D7E5100EA81A2 /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		77303C7B343E593B4BE1773D /* Pods-BeaconTrail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconTrail.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconTrail/Pods-BeaconTrail.release.xcconfig"; sourceTree = "<group>"; };
 		7C2436AD83C368E4EDA464E6 /* Pods_BeaconTrailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconTrailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8353CA3CE1C28EC2B0B7AE02 /* Pods-BeaconTrailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconTrailTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconTrailTests/Pods-BeaconTrailTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E51EF7B96901C5B10C86BF /* Pods_BeaconTrail.framework in Frameworks */,
+				767166AF1D8D81AE00EA81A2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +173,7 @@
 		76599F3D1D81B03700E6604C = {
 			isa = PBXGroup;
 			children = (
+				767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */,
 				76599F481D81B03700E6604C /* BeaconTrail */,
 				76599F601D81B03800E6604C /* BeaconTrailTests */,
 				76599F6B1D81B03800E6604C /* BeaconTrailUITests */,
@@ -129,8 +204,8 @@
 				76599F551D81B03700E6604C /* LaunchScreen.storyboard */,
 				76599F581D81B03700E6604C /* Info.plist */,
 				76599F501D81B03700E6604C /* BeaconTrail.xcdatamodeld */,
-				76599F7A1D81B21500E6604C /* ObjCBridge.h */,
 				76599F7D1D82566C00E6604C /* discounts.swift */,
+				767166951D8D7E5100EA81A2 /* ObjCBridge.h */,
 			);
 			path = BeaconTrail;
 			sourceTree = "<group>";
@@ -151,6 +226,20 @@
 				76599F6E1D81B03800E6604C /* Info.plist */,
 			);
 			path = BeaconTrailUITests;
+			sourceTree = "<group>";
+		};
+		767166971D8D802D00EA81A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767166A21D8D802D00EA81A2 /* Alamofire.framework */,
+				767166A41D8D802D00EA81A2 /* Alamofire iOS Tests.xctest */,
+				767166A61D8D802D00EA81A2 /* Alamofire.framework */,
+				767166A81D8D802D00EA81A2 /* Alamofire OSX Tests.xctest */,
+				767166AA1D8D802D00EA81A2 /* Alamofire.framework */,
+				767166AC1D8D802D00EA81A2 /* Alamofire tvOS Tests.xctest */,
+				767166AE1D8D802D00EA81A2 /* Alamofire.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9D10434995CDF82A14AADCA2 /* Frameworks */ = {
@@ -189,10 +278,12 @@
 				76599F441D81B03700E6604C /* Resources */,
 				191AAB59D5BAF24E701832A8 /* [CP] Embed Pods Frameworks */,
 				57D029B4DF29A9B00DEAEE60 /* [CP] Copy Pods Resources */,
+				767166B31D8D81AE00EA81A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				767166B21D8D81AE00EA81A2 /* PBXTargetDependency */,
 			);
 			name = BeaconTrail;
 			productName = BeaconTrail;
@@ -247,19 +338,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = edu.uncc.cs6010;
 				TargetAttributes = {
 					76599F451D81B03700E6604C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8Q4657TL38;
+						DevelopmentTeam = WN3YQ2PUY2;
+						LastSwiftMigration = 0800;
 					};
 					76599F5C1D81B03800E6604C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 76599F451D81B03700E6604C;
 					};
 					76599F671D81B03800E6604C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 76599F451D81B03700E6604C;
 					};
 				};
@@ -275,6 +369,12 @@
 			mainGroup = 76599F3D1D81B03700E6604C;
 			productRefGroup = 76599F471D81B03700E6604C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 767166971D8D802D00EA81A2 /* Products */;
+					ProjectRef = 767166961D8D802D00EA81A2 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				76599F451D81B03700E6604C /* BeaconTrail */,
@@ -283,6 +383,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		767166A21D8D802D00EA81A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 767166A11D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166A41D8D802D00EA81A2 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 767166A31D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166A61D8D802D00EA81A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 767166A51D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166A81D8D802D00EA81A2 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 767166A71D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166AA1D8D802D00EA81A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 767166A91D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166AC1D8D802D00EA81A2 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 767166AB1D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		767166AE1D8D802D00EA81A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 767166AD1D8D802D00EA81A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		76599F441D81B03700E6604C /* Resources */ = {
@@ -476,6 +628,11 @@
 			target = 76599F451D81B03700E6604C /* BeaconTrail */;
 			targetProxy = 76599F691D81B03800E6604C /* PBXContainerItemProxy */;
 		};
+		767166B21D8D81AE00EA81A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 767166B11D8D81AE00EA81A2 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -512,11 +669,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -539,6 +699,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = BeaconTrail/ObjCBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,11 +719,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -578,6 +742,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = BeaconTrail/ObjCBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -587,15 +753,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66C005C505019455775AFF6E /* Pods-BeaconTrail.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				DEVELOPMENT_TEAM = WN3YQ2PUY2;
 				INFOPLIST_FILE = BeaconTrail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -603,15 +772,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77303C7B343E593B4BE1773D /* Pods-BeaconTrail.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kranthi Chinnakotla (7UH83PH3M5)";
+				DEVELOPMENT_TEAM = WN3YQ2PUY2;
 				INFOPLIST_FILE = BeaconTrail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -624,6 +796,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconTrail.app/BeaconTrail";
 			};
 			name = Debug;
@@ -637,6 +810,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconTrail.app/BeaconTrail";
 			};
 			name = Release;
@@ -649,6 +823,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BeaconTrail;
 			};
 			name = Debug;
@@ -661,6 +836,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.cs6010.BeaconTrailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BeaconTrail;
 			};
 			name = Release;

@@ -15,7 +15,7 @@ target 'BeaconTrail' do
     pod 'MBProgressHUD','~> 1.0.0'
     pod 'SDWebImage','~>3.8'
     pod 'Firebase/Storage'
-    pod 'SwiftyJSON', '~> 2.3.2'
+    
 
   target 'BeaconTrailTests' do
     inherit! :search_paths

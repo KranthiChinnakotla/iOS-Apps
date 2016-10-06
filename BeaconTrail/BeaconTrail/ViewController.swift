@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import Firebase
 import SDWebImage
-import SwiftyJSON
+import Alamofire
 
 class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDelegate,UITableViewDataSource {
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
     //var count: Int?
     var placesByBeacon: Dictionary<String,[discounts]>?
     let beaconRegion = CLBeaconRegion(
-        proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+        proximityUUID: UUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
         identifier: "ranged region")
    
 
@@ -52,7 +52,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
     
   
    
-    func placesNearBeacon(beacon: CLBeacon) -> [discounts]? {
+    func placesNearBeacon(_ beacon: CLBeacon) -> [discounts]? {
         let beaconKey = "\(beacon.major):\(beacon.minor)"
         if let places = self.placesByBeacon![beaconKey] {
             //let sortedPlaces = Array(places)//.sort { $0.1 < $1.1 }.map { $0.0 }
@@ -62,25 +62,26 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
         return nil
     }
     
-    func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
-        if let nearestBeacon = beacons.first, places = placesNearBeacon(nearestBeacon) {
+    func beaconManager(_ manager: AnyObject, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        if let nearestBeacon = beacons.first, let places = placesNearBeacon(nearestBeacon) {
+            
             
             self.tableView.reloadData()
            
         }
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.discountsData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexpath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("usercell", forIndexPath: indexpath)
-        (cell.viewWithTag(2) as? UILabel)?.text = discountsData[indexpath.row].name
-        (cell.viewWithTag(3) as? UILabel)?.text = discountsData[indexpath.row].discount
-        (cell.viewWithTag(101) as? UILabel)?.text = discountsData[indexpath.row].price
-        (cell.viewWithTag(102) as? UILabel)?.text = discountsData[indexpath.row].region
-        switch discountsData[indexpath.row].photo {
+    func tableView(_ tableView: UITableView, cellForRowAt indexpath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "usercell", for: indexpath)
+        (cell.viewWithTag(2) as? UILabel)?.text = discountsData[(indexpath as NSIndexPath).row].name
+        (cell.viewWithTag(3) as? UILabel)?.text = discountsData[(indexpath as NSIndexPath).row].discount
+        (cell.viewWithTag(101) as? UILabel)?.text = discountsData[(indexpath as NSIndexPath).row].price
+        (cell.viewWithTag(102) as? UILabel)?.text = discountsData[(indexpath as NSIndexPath).row].region
+        switch discountsData[(indexpath as NSIndexPath).row].photo {
         case "coca-cola.png":
             (cell.viewWithTag(1) as? UIImageView)?.image = UIImage(named: "coca-cola")
             break
@@ -151,15 +152,27 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
         
         let urlString =  "http://ec2-52-87-240-156.compute-1.amazonaws.com/datafetch"
         
-        let url = NSURL(string: urlString)
+        let url = URL(string: urlString)
+        Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { response in
+            
+           // print (urlString)
+            print(response.result.value as? [NSArray])
+            if let status = response.response?.statusCode{
+                print(status)
+            }
+            
+        }
         
-        if let data = try? NSData(contentsOfURL: url!, options: NSDataReadingOptions()){
-            let json = JSON(data:data)
+        
+        if let data = try? Data(contentsOf: url!, options: Data.ReadingOptions()){
+            
+            
+           // let json = JSON(data:data)
             
 //           print(json["discounts"])
 //
 //            print(stories.count)
-            for (index, object) in json {
+           /* for (index, object) in json {
                 
                 var ids:String = ""
                 var smallI:String = ""
@@ -208,7 +221,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
                 }
               //  discountsData.append(discounts(name:ids,photo: title,price: pubDate,discount: smallI,region: largeI))
                 
-            }
+            }*/
             self.tableView.reloadData()
 
         }
@@ -227,14 +240,15 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate,UITableViewDele
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.beaconManager.startRangingBeaconsInRegion(self.beaconRegion)
+        self.beaconManager.startRangingBeacons(in: self.beaconRegion)
+        
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        self.beaconManager.stopRangingBeaconsInRegion(self.beaconRegion)
+        self.beaconManager.stopRangingBeacons(in: self.beaconRegion)
         
     }
 

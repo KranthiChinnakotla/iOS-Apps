@@ -1,0 +1,6 @@
+framework module Pods_Group3AdvMobileTests {
+  umbrella header "Pods-Group3AdvMobileTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
