@@ -7,14 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7622C4A51DA97FAD00FB71BC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7622C4981DA97CC100FB71BC /* Alamofire.framework */; };
+		7622C4A61DA97FAD00FB71BC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7622C4981DA97CC100FB71BC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7622C4AD1DA987B400FB71BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622C4AC1DA987B400FB71BC /* LoginViewController.swift */; };
+		7622C4B51DAAAF5B00FB71BC /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622C4B41DAAAF5B00FB71BC /* Questions.swift */; };
+		7622C4B81DAB16C200FB71BC /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622C4B71DAB16C200FB71BC /* Patients.swift */; };
 		76E903981DA680980016157D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E903971DA680980016157D /* AppDelegate.swift */; };
 		76E9039A1DA680980016157D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E903991DA680980016157D /* ViewController.swift */; };
 		76E9039D1DA680980016157D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E9039B1DA680980016157D /* Main.storyboard */; };
 		76E9039F1DA680980016157D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E9039E1DA680980016157D /* Assets.xcassets */; };
 		76E903A21DA680980016157D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E903A01DA680980016157D /* LaunchScreen.storyboard */; };
+		EEE645BB54CB52EE915EEFF3 /* Pods_Clinical_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D3CC9308222654C1CCDCE0 /* Pods_Clinical_App.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7622C4971DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		7622C4991DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		7622C49B1DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		7622C49D1DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		7622C49F1DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		7622C4A11DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		7622C4A31DA97CC100FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		7622C4A71DA97FAD00FB71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7622C4A91DA97FAD00FB71BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7622C4A61DA97FAD00FB71BC /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05D99F863A21A4D80B3B5F8A /* Pods-Clinical_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinical_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinical_App/Pods-Clinical_App.release.xcconfig"; sourceTree = "<group>"; };
+		7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		7622C4AC1DA987B400FB71BC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7622C4B41DAAAF5B00FB71BC /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		7622C4B71DAB16C200FB71BC /* Patients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		76E903941DA680980016157D /* Clinical_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinical_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E903971DA680980016157D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E903991DA680980016157D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +106,8 @@
 		76E9039E1DA680980016157D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E903A11DA680980016157D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76E903A31DA680980016157D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB035FED40A5F078A7BA9E9 /* Pods-Clinical_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinical_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinical_App/Pods-Clinical_App.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D3CC9308222654C1CCDCE0 /* Pods_Clinical_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinical_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +115,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE645BB54CB52EE915EEFF3 /* Pods_Clinical_App.framework in Frameworks */,
+				7622C4A51DA97FAD00FB71BC /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2613B6138ADBF5D936AADC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3CC9308222654C1CCDCE0 /* Pods_Clinical_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7622C48D1DA97CC100FB71BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7622C4981DA97CC100FB71BC /* Alamofire.framework */,
+				7622C49A1DA97CC100FB71BC /* Alamofire iOS Tests.xctest */,
+				7622C49C1DA97CC100FB71BC /* Alamofire.framework */,
+				7622C49E1DA97CC100FB71BC /* Alamofire OSX Tests.xctest */,
+				7622C4A01DA97CC100FB71BC /* Alamofire.framework */,
+				7622C4A21DA97CC100FB71BC /* Alamofire tvOS Tests.xctest */,
+				7622C4A41DA97CC100FB71BC /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		76E9038B1DA680970016157D = {
 			isa = PBXGroup;
 			children = (
+				7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */,
 				76E903961DA680980016157D /* Clinical_App */,
 				76E903951DA680980016157D /* Products */,
+				BC37C45876FCB330982E3A0E /* Pods */,
+				2613B6138ADBF5D936AADC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +173,20 @@
 				76E9039E1DA680980016157D /* Assets.xcassets */,
 				76E903A01DA680980016157D /* LaunchScreen.storyboard */,
 				76E903A31DA680980016157D /* Info.plist */,
+				7622C4AC1DA987B400FB71BC /* LoginViewController.swift */,
+				7622C4B41DAAAF5B00FB71BC /* Questions.swift */,
+				7622C4B71DAB16C200FB71BC /* Patients.swift */,
 			);
 			path = Clinical_App;
+			sourceTree = "<group>";
+		};
+		BC37C45876FCB330982E3A0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFB035FED40A5F078A7BA9E9 /* Pods-Clinical_App.debug.xcconfig */,
+				05D99F863A21A4D80B3B5F8A /* Pods-Clinical_App.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,13 +196,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E903A61DA680980016157D /* Build configuration list for PBXNativeTarget "Clinical_App" */;
 			buildPhases = (
+				658AE01E36694168842D67AB /* [CP] Check Pods Manifest.lock */,
 				76E903901DA680970016157D /* Sources */,
 				76E903911DA680970016157D /* Frameworks */,
 				76E903921DA680970016157D /* Resources */,
+				59652CCA1CEAFE3F89B563E9 /* [CP] Embed Pods Frameworks */,
+				C9EF4B5408CB3AAC6C18D750 /* [CP] Copy Pods Resources */,
+				7622C4A91DA97FAD00FB71BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7622C4A81DA97FAD00FB71BC /* PBXTargetDependency */,
 			);
 			name = Clinical_App;
 			productName = Clinical_App;
@@ -97,6 +227,7 @@
 					76E903931DA680970016157D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8Q4657TL38;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,12 +243,70 @@
 			mainGroup = 76E9038B1DA680970016157D;
 			productRefGroup = 76E903951DA680980016157D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7622C48D1DA97CC100FB71BC /* Products */;
+					ProjectRef = 7622C48C1DA97CC100FB71BC /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				76E903931DA680970016157D /* Clinical_App */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7622C4981DA97CC100FB71BC /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7622C4971DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C49A1DA97CC100FB71BC /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 7622C4991DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C49C1DA97CC100FB71BC /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7622C49B1DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C49E1DA97CC100FB71BC /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 7622C49D1DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C4A01DA97CC100FB71BC /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7622C49F1DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C4A21DA97CC100FB71BC /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 7622C4A11DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7622C4A41DA97CC100FB71BC /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7622C4A31DA97CC100FB71BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		76E903921DA680970016157D /* Resources */ = {
@@ -132,17 +321,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59652CCA1CEAFE3F89B563E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clinical_App/Pods-Clinical_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		658AE01E36694168842D67AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EF4B5408CB3AAC6C18D750 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clinical_App/Pods-Clinical_App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76E903901DA680970016157D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7622C4B81DAB16C200FB71BC /* Patients.swift in Sources */,
+				7622C4AD1DA987B400FB71BC /* LoginViewController.swift in Sources */,
+				7622C4B51DAAAF5B00FB71BC /* Questions.swift in Sources */,
 				76E9039A1DA680980016157D /* ViewController.swift in Sources */,
 				76E903981DA680980016157D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7622C4A81DA97FAD00FB71BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 7622C4A71DA97FAD00FB71BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		76E9039B1DA680980016157D /* Main.storyboard */ = {
@@ -188,6 +436,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8Q4657TL38;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -238,6 +487,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8Q4657TL38;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -259,26 +509,38 @@
 		};
 		76E903A71DA680980016157D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB035FED40A5F078A7BA9E9 /* Pods-Clinical_App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8Q4657TL38;
 				INFOPLIST_FILE = Clinical_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uncc.Clinical-App";
+				PRODUCT_BUNDLE_IDENTIFIER = Kranthi.ClinicalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		76E903A81DA680980016157D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D99F863A21A4D80B3B5F8A /* Pods-Clinical_App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8Q4657TL38;
 				INFOPLIST_FILE = Clinical_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uncc.Clinical-App";
+				PRODUCT_BUNDLE_IDENTIFIER = Kranthi.ClinicalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +564,7 @@
 				76E903A81DA680980016157D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

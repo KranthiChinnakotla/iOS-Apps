@@ -1,5 +1,5 @@
 //
-//  Patients.swift
+//  File.swift
 //  Clinical_App
 //
 //  Created by Kranthi Chinnakotla on 10/9/16.
@@ -7,10 +7,3 @@
 //
 
 import Foundation
-
-
-struct Patients {
-    
-    
-    
-}

@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+class Questions {
+    var category: String?
+    var checkbox: String?
+    var options: [String]?
+    var question: String?
+}
