@@ -9,8 +9,9 @@
 import Foundation
 
 
-struct Patients {
+class Patients {
     
-    
+    var username: String?
+    var password: String?
     
 }

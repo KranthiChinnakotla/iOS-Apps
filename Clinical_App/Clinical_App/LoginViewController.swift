@@ -12,7 +12,7 @@ import Alamofire
 class LoginViewController: UIViewController {
     var fullList: [Questions] = [Questions]()
     var partialList: [Questions] = [Questions]()
-    var dbUser = String()
+    var patientsList:[Patients] = [Patients]()
     
     
     @IBOutlet weak var userName: UITextField!
@@ -23,61 +23,75 @@ class LoginViewController: UIViewController {
 
     @IBAction func submitButton(_ sender: UIButton) {
         
-            verifyPatients()
+        var flag: Bool?
+        
             if let  user = userName.text{
-                let  parameters: Parameters = ["user": user]
-                print(parameters)
-                var token: String?
-                var verifiedUser: String?
-                var err: Dictionary<String,AnyObject>?
-                var error: String?
-                if parameters["user"] as? String != ""{
-                    Alamofire.request("http://localhost:8081/index.html",parameters: parameters).responseJSON(completionHandler: { (response) in
-                        print(response.request)  // original URL request
-                        let a = (response.result.value as? Dictionary<String,String>)!// result of response serialization
-                        token = a["token"]!
-                        
-                        DispatchQueue.main.async {
+                for pat in patientsList{
+                    if (user == pat.username && passwordText.text == pat.password){
+                        flag = true
+                    }
+                }
+                
+                if(flag)!{
+                    let  parameters: Parameters = ["user": user]
+                    print(parameters)
+                    var token: String?
+                    var verifiedUser: String?
+                    var err: Dictionary<String,AnyObject>?
+                    var error: String?
+                    if parameters["user"] as? String != ""{
+                        Alamofire.request("http://localhost:8081/index.html",parameters: parameters).responseJSON(completionHandler: { (response) in
+                            print(response.request)  // original URL request
+                            let a = (response.result.value as? Dictionary<String,String>)!// result of response serialization
+                            token = a["token"]!
                             
-                            if token != nil {
-                                let params: Parameters = ["token": token!]
-                                Alamofire.request("http://localhost:8081/verify.html",parameters: params).responseJSON(completionHandler: { (response) in
-                                    let b = (response.result.value as? Dictionary<String,AnyObject>)!
-                                    verifiedUser = b["user"] as? String
-                                    err = b["error"] as? Dictionary<String,AnyObject>
-                                    if(err != nil){
-                                        error = err!["name"] as? String
-                                    }
-                                    
-                                    DispatchQueue.main.async {
+                            DispatchQueue.main.async {
+                                
+                                if token != nil {
+                                    let params: Parameters = ["token": token!]
+                                    Alamofire.request("http://localhost:8081/verify.html",parameters: params).responseJSON(completionHandler: { (response) in
+                                        let b = (response.result.value as? Dictionary<String,AnyObject>)!
+                                        verifiedUser = b["user"] as? String
+                                        err = b["error"] as? Dictionary<String,AnyObject>
+                                        if(err != nil){
+                                            error = err!["name"] as? String
+                                        }
                                         
-                                        if(verifiedUser != nil){
-                                            if(verifiedUser == user){
-                                                print("Verified")
-                                                self.readTheQuestions()
-                                            }else if(error != nil){
-                                                let alertCon = UIAlertController(title: "Authentication Error", message: error, preferredStyle: .alert)
-                                                alertCon.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                                                self.present(alertCon, animated: true, completion: nil)
-                                                
-                                            }else{
-                                                let alertCon = UIAlertController(title: "Authentication Error", message: "Invalid User", preferredStyle: .alert)
-                                                alertCon.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                                                self.present(alertCon, animated: true, completion: nil)
+                                        DispatchQueue.main.async {
+                                            
+                                            if(verifiedUser != nil){
+                                                if(verifiedUser == user){
+                                                    print("Verified")
+                                                    self.readTheQuestions()
+                                                }else if(error != nil){
+                                                    let alertCon = UIAlertController(title: "Authentication Error", message: error, preferredStyle: .alert)
+                                                    alertCon.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                                    self.present(alertCon, animated: true, completion: nil)
+                                                    
+                                                }else{
+                                                    let alertCon = UIAlertController(title: "Authentication Error", message: "Invalid User", preferredStyle: .alert)
+                                                    alertCon.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                                    self.present(alertCon, animated: true, completion: nil)
+                                                }
                                             }
                                         }
-                                    }
-                                })
+                                    })
+                                }
                             }
-                        }
-                    })
-                    
+                        })
+                        
+                    }else{
+                        let alertController = UIAlertController(title: "Enter Credentials", message: "Invalid UserName or Password", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                    }
                 }else{
-                    let alertController = UIAlertController(title: "Enter Credentials", message: "Invalid UserName or Password", preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self.present(alertController, animated: true, completion: nil)
-                    
+                    let userAlert = UIAlertController(title: "Invalid Credentials", message: "Verify username and password", preferredStyle: .alert)
+                    userAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(userAlert, animated: true, completion: nil)
                 }
+               
                 
             }
         
@@ -97,10 +111,11 @@ class LoginViewController: UIViewController {
         Alamofire.request("http://ec2-54-197-12-149.compute-1.amazonaws.com/allpatients").responseJSON { (response) in
             let pArray = response.result.value as? Array<Any>
             for a in pArray!{
+                let pat = Patients()
                 let b = a as? Dictionary<String,AnyObject>
-                if((b?["username"] as? String) == self.userName.text!){
-                    self.dbUser = self.userName.text!
-                }
+                pat.username = b?["username"] as? String
+                pat.password = b?["passw"] as? String
+                self.patientsList.append(pat)
             }
         }
         
@@ -143,6 +158,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        verifyPatients()
         
 
         // Do any additional setup after loading the view.
