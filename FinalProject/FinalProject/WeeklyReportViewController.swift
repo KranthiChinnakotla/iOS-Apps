@@ -13,6 +13,7 @@ class WeeklyReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         // Do any additional setup after loading the view.
     }
 

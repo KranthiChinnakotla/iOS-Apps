@@ -7,3 +7,10 @@
 //
 
 import Foundation
+public class Questions{
+    var step = Int()
+    var question = String()
+    var answer = String()
+    
+    
+}

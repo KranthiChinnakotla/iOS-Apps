@@ -10,10 +10,37 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+   
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    @IBAction func selectAnImage(_ sender: UIButton) {
+        self.pickAnImage()
+        
+        
+    }
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImage.image = UIImage(named: "user-icon")
 
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        profileImage = {
+//            let imageView = UIImageView()
+//            imageView.image = UIImage(named: "user-icon")
+//            imageView.translatesAutoresizingMaskIntoConstraints = false
+//            imageView.contentMode = .scaleAspectFill
+//            return imageView
+//            
+//            
+//        }()
     }
 
     override func didReceiveMemoryWarning() {
