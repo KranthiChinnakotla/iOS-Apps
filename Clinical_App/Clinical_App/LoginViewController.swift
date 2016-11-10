@@ -25,22 +25,24 @@ class LoginViewController: UIViewController {
         
         var flag: Bool?
         
-            if let  user = userName.text{
-                for pat in patientsList{
-                    if (user == pat.username && passwordText.text == pat.password){
-                        flag = true
-                    }
-                }
+        guard let user = userName.text else {
+            return
+        }
+        guard let password = passwordText.text else {
+            return
+        }
+        
+        
                 
-                if(flag)!{
-                    let  parameters: Parameters = ["user": user]
+                if(flag != nil){
+                    let  parameters: Parameters = ["user": user,"password":password]
                     print(parameters)
                     var token: String?
                     var verifiedUser: String?
                     var err: Dictionary<String,AnyObject>?
                     var error: String?
                     if parameters["user"] as? String != ""{
-                        Alamofire.request("http://localhost:8081/index.html",parameters: parameters).responseJSON(completionHandler: { (response) in
+                        Alamofire.request("http://localhost:8081/login",parameters: parameters).responseJSON(completionHandler: { (response) in
                             print(response.request)  // original URL request
                             let a = (response.result.value as? Dictionary<String,String>)!// result of response serialization
                             token = a["token"]!
@@ -49,7 +51,7 @@ class LoginViewController: UIViewController {
                                 
                                 if token != nil {
                                     let params: Parameters = ["token": token!]
-                                    Alamofire.request("http://localhost:8081/verify.html",parameters: params).responseJSON(completionHandler: { (response) in
+                                    Alamofire.request("http://localhost:8081/verify",parameters: params).responseJSON(completionHandler: { (response) in
                                         let b = (response.result.value as? Dictionary<String,AnyObject>)!
                                         verifiedUser = b["user"] as? String
                                         err = b["error"] as? Dictionary<String,AnyObject>
@@ -93,7 +95,7 @@ class LoginViewController: UIViewController {
                 }
                
                 
-            }
+            
         
         
 

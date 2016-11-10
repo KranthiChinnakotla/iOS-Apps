@@ -16,26 +16,40 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     
     @IBOutlet weak var question: UILabel!
     
+    @IBOutlet weak var selecButtonOutlet: UIButton!
     
+    @IBOutlet weak var additionQuestionText: UILabel!
     @IBAction func prevButton(_ sender: UIButton) {
         
-        count -= 1
+        
+        
         if(count > 0 && selectedList.count != 0){
+            count -= 1
             question.text = selectedList[count].question!
             sampleQuestions = (selectedList[count].options)!
             picker.reloadAllComponents()
+            if(selectedList[count].checkbox != "null"){
+                additionalQuestion()            }
         }
     }
     
     
     @IBAction func nextButton(_ sender: UIButton) {
         
+        
         count += 1
+        if(count == selectedList.count){
+            count -= 1
+        }
         if(count < selectedList.count){
             
                 question.text = selectedList[count].question!
                 sampleQuestions = (selectedList[count].options)!
                 picker.reloadAllComponents()
+            if(selectedList[count].checkbox != "null"){
+                additionalQuestion()
+            }
+
             
         }
        
@@ -43,6 +57,21 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     }
     
     
+    @IBAction func buttonSelected(_ sender: UIButton) {
+        
+        
+    }
+    
+    func additionalQuestion(){
+        let checkAlert = UIAlertController(title: "Additional Question", message: selectedList[count].checkbox!, preferredStyle: .alert)
+        checkAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) in
+            
+        }))
+        checkAlert.addAction(UIAlertAction(title: "No", style: .default, handler: { (UIAlertAction) in
+            
+        }))
+        self.present(checkAlert, animated: true, completion: nil)
+    }
     
     
     @IBOutlet weak var radioButtonYes: UIButton!
@@ -125,6 +154,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
                     self.question.text = self.selectedList[self.count].question!
                     self.sampleQuestions = (self.selectedList[self.count].options)!
                     self.picker.reloadAllComponents()
+                    self.additionalQuestion()
                 }
             }))
             self.present(medicationAlert, animated: true, completion: nil)
@@ -148,6 +178,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
                 self.question.text = self.selectedList[self.count].question!
                 self.sampleQuestions = (self.selectedList[self.count].options)!
                 self.picker.reloadAllComponents()
+                self.additionalQuestion()
             }
         }))
         self.present(bpAlert, animated: true, completion: nil)
@@ -156,6 +187,8 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selecButtonOutlet.isHidden = true
+        additionQuestionText.isHidden = true
         
        
         
